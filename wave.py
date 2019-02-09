@@ -30,7 +30,7 @@ dis_cord = "https://cdn.discordapp.com/attachments/499771950764261396/5004855787
 async def on_ready():
 	servers = list(bot.servers)
 #status = f"over {str(len(bot.servers))} servers"
-	status = f"for {pref}commands"
+	status = f"over the server"
 	print ("------------------------------------")
 	print (f"Bot Name: {bot.user.name}")
 	print (f"Bot ID: {bot.user.id}")
