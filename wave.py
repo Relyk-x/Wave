@@ -14,11 +14,11 @@ import time
 import bs4, requests
 import os
 
-bot = commands.Bot(command_prefix='v!')
+bot = commands.Bot(command_prefix=';')
 msglimit = 100
 now = datetime.now()
 ver = "0.0.0"
-botname = ""
+botname = "WΛVE"
 temprule = "Undefined"
 
 #Emoji
@@ -170,23 +170,27 @@ async def version(ctx):
 # ℹ️ | W E B S I T E
 ##############################################################################################################################
 
-@bot.command(pass_context=True)
-async def website(ctx):
-	embed = discord.Embed(color=0x7289da,)
-	embed.set_author(name="Website", icon_url=wave)
-	embed.add_field(name="Link:", value="https://relykxdiscord.wixsite.com/mikibot")
-	await bot.say(embed=embed)
+# DISABLED
+
+#@bot.command(pass_context=True)
+#async def website(ctx):
+	#embed = discord.Embed(color=0x7289da,)
+	#embed.set_author(name="Website", icon_url=wave)
+	#embed.add_field(name="Link:", value="https://relykxdiscord.wixsite.com/mikibot")
+	#await bot.say(embed=embed)
 	
 ##############################################################################################################################
 # ℹ️ | D O N A T E
 ##############################################################################################################################
 
-@bot.command(pass_context=True)
-async def donate(ctx):
-	embed = discord.Embed(description="You can donate here: \nhttps://www.patreon.com/join/vixendiscord?", color=0xf76754)
-	embed.set_author(name="Patreon", icon_url=patreon)
-	embed.set_thumbnail(url=patreon)
-	await bot.say(embed=embed)
+# DISABLED
+
+#@bot.command(pass_context=True)
+#async def donate(ctx):
+	#embed = discord.Embed(description="You can donate here: \nhttps://www.patreon.com/join/vixendiscord?", color=0xf76754)
+	#embed.set_author(name="Patreon", icon_url=patreon)
+	#embed.set_thumbnail(url=patreon)
+	#await bot.say(embed=embed)
 
 ##############################################################################################################################
 # ℹ️ | P A S S W O R D
@@ -194,7 +198,7 @@ async def donate(ctx):
 
 @bot.command(pass_context=True)
 async def password(ctx):
-	embed = discord.Embed(title=f"{botname} Commands", description=":mailbox_with_mail: Check DMs", color=0x7289da)
+	embed = discord.Embed(title=f"Password Generated", description=":mailbox_with_mail: Check DMs", color=0x7289da)
 	embed.set_footer(text=f"Requested by {ctx.message.author} | v{ver}", icon_url=ctx.message.author.avatar_url)
 	await bot.say(embed=embed)
 	encryptkey = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',]
