@@ -35,7 +35,7 @@ async def on_ready():
 	print (f"Bot Name: {bot.user.name}")
 	print (f"Bot ID: {bot.user.id}")
 	print (f"Discord Version: {discord.__version__}")
-	print (f" is up and running...")
+	print (f"Bot is up and running...")
 	print ("------------------------------------")
 	await bot.change_presence(game=discord.Game(name=status,type=3))
 	
