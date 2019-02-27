@@ -353,7 +353,7 @@ async def price(ctx):
 	embed.add_field(name="ANTI SPAM", value="**US$11.40** [-32%]\n~~US$7.75~~\n ‏‏‎ ", inline=False)
 	embed.add_field(name="MUSIC BOT", value="**US$17.10** [-32%]\n~~US$11.60~~\n ‏‏‎ ", inline=False)
 	embed.set_footer(text="Note: All pricess are subject to change.")
-	await ctx.send(embed=embed)
+	await bot.say(embed=embed)
 	
 ##############################################################################################################################
 # ℹ️ | F A Q
