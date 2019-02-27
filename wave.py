@@ -349,9 +349,9 @@ async def shop(ctx):
 async def price(ctx):
 	embed = discord.Embed(description="**`B` `O` `T` `S`**\n ‏‏‎ ", color=0x7289da,)
 	embed.set_author(name=ctx.message.server.name, icon_url=ctx.message.server.icon_url)
-	embed.add_field(name="WARN | MUTE | BAN | KICK", value="**US$22.75** [-32%]\n~~US$15.50~~\n ‏‏‎ ", inline=False)
-	embed.add_field(name="ANTI SPAM", value="**US$11.40** [-32%]\n~~US$7.75~~\n ‏‏‎ ", inline=False)
-	embed.add_field(name="MUSIC BOT", value="**US$17.10** [-32%]\n~~US$11.60~~\n ‏‏‎ ", inline=False)
+	embed.add_field(name="WARN | MUTE | BAN | KICK", value="**US$22.75** [-32%]\n~~US$30.00~~\n ‏‏‎ ", inline=False)
+	embed.add_field(name="ANTI SPAM", value="**US$11.40** [-32%]\n~~US$15.00~~\n ‏‏‎ ", inline=False)
+	embed.add_field(name="MUSIC BOT", value="**US$17.10** [-32%]\n~~US$22.50~~\n ‏‏‎ ", inline=False)
 	embed.set_footer(text="Note: All pricess are subject to change.")
 	await bot.say(embed=embed)
 	
