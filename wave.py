@@ -339,6 +339,21 @@ async def shop(ctx):
 	embed.add_field(name="@everyone Ping with an advertisement", value="● FREE - however, this price will rise in correlation to the member count.", inline=False)
 	embed.add_field(name=" ‏‏‎ ", value="Check your invite count with `!invites` in <#539810655323029514>.\nDM Relykx#2896 once you meet the criteria, or are interested in buying.", inline=False)
 	await bot.say(embed=embed)
+
+##############################################################################################################################
+# ℹ️ | B O T S
+##############################################################################################################################
+
+@bot.command()
+@commands.has_permissions(administrator = True)
+async def price(ctx):
+	emb = discord.Embed(description="**`B` `O` `T` `S`**\n ‏‏‎ ", color=0x7289da,)
+	emb.set_author(name=ctx.message.server.name, icon_url=ctx.message.server.icon_url)
+	emb.add_field(name="WARN | MUTE | BAN | KICK", value="**US$22.75** [-32%]\n~~US$15.50~~\n ‏‏‎ ", inline=False)
+	emb.add_field(name="ANTI SPAM", value="**US$11.40** [-32%]\n~~US$7.75~~\n ‏‏‎ ", inline=False)
+	emb.add_field(name="MUSIC BOT", value="**US$17.10** [-32%]\n~~US$11.60~~\n ‏‏‎ ", inline=False)
+	emb.set_footer(text="Note: All pricess are subject to change.")
+	await ctx.send(embed=emb)
 	
 ##############################################################################################################################
 # ℹ️ | F A Q
